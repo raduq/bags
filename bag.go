@@ -2,19 +2,14 @@ package main
 
 import "errors"
 
-//Item is a consumable
-type Item struct {
-	Name string
-}
-
 //Bag is a holder of multiple Item
 type Bag struct {
 	Items []Item
 	Size  int
 }
 
-//New creates a new Bag
-func New(size int) Bag {
+//NewBag creates a new Bag
+func NewBag(size int) Bag {
 	return Bag{[]Item{}, size}
 }
 
